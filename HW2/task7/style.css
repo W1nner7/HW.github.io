@@ -1,0 +1,15 @@
+p:first-child{
+ color: red; 
+}
+
+p:only-child{
+  color: #fff;
+}
+
+div:only-of-type{
+  background-color: blue;
+}
+
+*:last-child{
+  color: blue;
+}

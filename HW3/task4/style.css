@@ -1,0 +1,9 @@
+span:first-of-type{
+  font-weight: bold;
+}
+span:last-child{
+  font-style: italic;
+}
+p{
+  font-size: 2rem;
+}

@@ -1,0 +1,43 @@
+.blue{
+  background-color: blue;
+}
+
+.red{
+  background-color: red;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  width: 90px;
+  height: 90px;
+}
+
+.rounded{
+  border-radius: 50%;
+}
+
+.tltr{
+  border-radius: 50% 50% 0 0;
+}
+
+.tl{
+  border-radius: 50% 0 0;
+}
+
+.trbr{
+  border-radius: 0 50% 50% 0;
+}
+
+.bl{
+  border-radius: 0 0 0 50%;
+
+}
+
+.blbr{
+  border-radius: 0 0 50% 50%;
+}
+
+

@@ -1,0 +1,7 @@
+table{
+  border-spacing: 20px;
+}
+
+td{
+  border: 3px dotted green;
+}

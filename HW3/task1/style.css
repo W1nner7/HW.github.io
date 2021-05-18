@@ -1,0 +1,32 @@
+p {
+  font-size: medium;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.sixteen{
+  color: #f08080;
+}
+
+.name{
+  color: lightgreen;
+}
+
+.rgb{
+color: rgb(0, 255, 255);
+}
+
+.hsl{
+  color: hsl(208, 100%, 97%);
+}
+
+.alpha{
+  color: rgba(59, 119, 138, 0.3);
+}
+
+html{
+  background-image: url('https://i.pinimg.com/originals/d1/b9/45/d1b945b372181c4389861f5c52044804.jpg');
+  background-repeat: no-repeat;
+}
+
+a{color: greenyellow}

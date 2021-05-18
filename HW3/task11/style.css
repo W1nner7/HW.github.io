@@ -1,0 +1,17 @@
+div{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+p{
+  background-color: blue;
+  width: 50%;
+  height: 50%;
+}
+p:first-of-type{
+  margin-left: 50%;
+  margin-bottom: 0;
+}
+p:last-of-type{
+  margin: 0;
+}

@@ -1,0 +1,15 @@
+.red{
+  background-color: red;
+  height: 54px;
+  width: 30%;
+}
+
+.one{
+  float: left;
+}
+
+.two{
+  float: right;
+  height: 54px;
+  width: 30%;
+}

@@ -1,0 +1,14 @@
+ul {
+  cursor: pointer;
+  list-style-type: none;
+}
+
+ul ul {
+  display: none;
+  background-color: red;
+}
+
+ul>li:hover>ul {
+  display: block;
+  width: fit-content;
+}

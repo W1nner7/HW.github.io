@@ -1,0 +1,34 @@
+.red{
+  float: left;
+  width: 30%;
+}
+
+.aqua{
+  width: 30%;
+  float: left;
+}
+
+.blue{
+  width: 30%;
+  float: right;
+}
+
+.yellow{
+  width: 40%;
+  margin-left: 30%;
+}
+
+.pink{
+  width: 30%;
+  float: right;
+}
+
+.green{
+  width: 70%;
+  float: right;
+}
+
+.black{
+  width: 70%;
+  float: left;
+}

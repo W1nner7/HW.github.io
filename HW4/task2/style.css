@@ -1,0 +1,30 @@
+.l80{
+  float: left;
+  width: 80%;
+  background-color: red;
+}
+
+.l20{
+  float: left;
+  width: 20%;
+  background-color: green;
+}
+
+.r20{
+  float: right;
+  width: 20%;
+  background-color: green;
+  margin-bottom: 18px;
+}
+
+.r80{
+  float: right;
+  width: 80%;
+  background-color: red;
+}
+
+a {
+  display: block;
+  width: 100%;
+  float: left;
+}

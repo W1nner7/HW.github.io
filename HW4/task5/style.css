@@ -1,0 +1,22 @@
+.list-item{
+  margin-left: 40px;
+  display: list-item;
+  list-style-type: upper-latin;
+}
+
+.a span{
+  display: block;
+}
+
+.a span:first-child,
+.a span:last-child{
+  display: inline;
+}
+
+.b div:nth-of-type(2){
+  display: inline;
+}
+
+.c span:nth-of-type(2){
+  display: inline-block;
+}

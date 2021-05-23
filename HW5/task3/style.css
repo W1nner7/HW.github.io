@@ -1,0 +1,38 @@
+
+
+*{
+  box-sizing: border-box;
+}
+
+div{
+  border: 1px solid #000;
+}
+
+.row-holder{
+  display: flex;
+  flex-direction: column;
+    border: none;
+
+}
+
+@media (min-width: 768px) {
+  .row-holder{
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+
+  .first, .third{
+    width: 25%;
+  }
+  .second{
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .second{
+    width: 40%;
+  }
+}

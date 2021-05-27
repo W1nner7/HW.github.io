@@ -1,0 +1,160 @@
+.table {
+  @include media('<desktop') {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tr {
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+
+    @include media('<desktop') {
+      flex-direction: column;
+    }
+  }
+
+  .td {
+    display: flex;
+    flex-grow: 1;
+    border-right: 1px solid #dddddd;
+    align-items: center;
+    justify-content: center;
+
+    @include media('<desktop') {
+      min-height: 100px;
+      max-height: 100px;
+    }
+
+    &:first-child {
+      border-left: 1px solid #dddddd;
+
+      @include media('<desktop') {
+        border-left: none;
+        min-height: 200px;
+        max-height: 200px;
+      }
+    }
+
+    &--product {
+      max-width: 40%;
+
+      @include media('<desktop') {
+        max-width: initial;
+      }
+
+      span {
+        text-transform: uppercase;
+        letter-spacing: .30em;
+      }
+    }
+
+    &--quantity {
+      max-width: 20%;
+
+      @include media('<desktop') {
+        max-width: initial;
+      }
+
+      .product__quantity {
+        margin-bottom: 0;
+      }
+    }
+
+    &--price {
+      max-width: 20%;
+
+      @include media('<desktop') {
+        max-width: initial;
+      }
+    }
+
+    &--total {
+      max-width: 20%;
+
+      @include media('<desktop') {
+        max-width: initial;
+      }
+    }
+  }
+
+  .thead {
+    background-color: #f7f7f7;
+
+    @include media('<desktop') {
+      border-left: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    .td {
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #dddddd;
+    }
+  }
+
+  .tbody {
+    .tr {
+      &:last-child {
+        .td {
+          border: none;
+
+          @include media('<desktop') {
+            display: none;
+
+            &:last-child {
+              display: flex;
+            }
+          }
+
+          &:first-child {
+            border-left: 1px solid #dddddd;
+          }
+
+          &:last-child {
+            border-left: 1px solid #dddddd;
+            border-right: 1px solid #dddddd;
+          }
+        }
+
+      }
+    }
+
+    .td {
+      padding: 30px;
+
+      @include media('<desktop') {
+        border-top: 1px solid #dddddd;
+      }
+
+      &--product {
+        @include media('<desktop') {
+          flex-direction: column;
+        }
+      }
+
+      &--price,
+      &--total {
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+
+        @include media('<desktop') {
+          font-size: 20px;
+        }
+      }
+
+
+    }
+
+    img {
+      max-height: 250px;
+      margin-right: 5%;
+
+      @include media('<desktop') {
+        margin: 0 0 5%;
+        max-width: 50%;
+      }
+    }
+  }
+
+}

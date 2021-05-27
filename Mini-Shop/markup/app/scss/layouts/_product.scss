@@ -1,0 +1,194 @@
+.product {
+  &__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &>* {
+      // background-color: hsla(0, 0%, 0%, 0.192);
+      width: 33.33%;
+    }
+  }
+
+  &__img {
+    @include media('<tablet') {
+      min-width: 40%;
+      max-height: 80vh;
+    }
+  }
+
+  &__info {
+    padding: 40px;
+
+    @include media('<desktop') {
+      flex-grow: 1;
+      min-width: 34%;
+    }
+
+    @include media('<tablet') {
+      min-width: 67%;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+
+      &:last-of-type {
+        margin-bottom: 40px;
+
+        @include media('<desktop') {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    strong {
+      border-top: 1px solid $accent;
+      border-bottom: 1px solid $accent;
+      padding: 20px 0;
+      margin-bottom: 40px;
+      color: $accent;
+      font-size: 36px;
+      display: block;
+
+      @include media('<desktop') {
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding: 15px 0;
+      }
+    }
+
+    .btn {
+      max-width: 50px;
+      width: 100%;
+
+      &+.btn {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__quantity {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    border: 1px solid $accent;
+    background-color: $white;
+    margin-bottom: 40px;
+
+    &>* {
+      padding: 5px 15px;
+    }
+
+    span {
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+
+    button {
+      border: 1px solid #222;
+      display: flex;
+      align-items: center;
+      background-color: #222;
+      color: $white;
+      margin: 0;
+      transition: background-color $animation-speed ease-in-out,
+        color $animation-speed ease-in-out, border $animation-speed ease-in-out;
+
+      &:hover {
+        background-color: $accent;
+        color: $black;
+        border: 1px solid $accent;
+      }
+
+      &:first-of-type {
+        border-right: 1px solid $accent;
+
+        span {
+          transform: translateY(-8%);
+        }
+      }
+
+      &:last-of-type {
+        border-left: 1px solid $accent;
+      }
+    }
+  }
+
+  &__sidebar {
+    padding: 40px;
+
+    @include media('<desktop') {
+      min-width: 34%;
+      width: initial;
+    }
+
+    &>span {
+      font-size: 14px;
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $accent;
+        right: -110%;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__sidebar-list {
+    @include media('<desktop') {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__sidebar-item {
+    display: flex;
+    margin-bottom: 20px;
+
+    img {
+      max-height: 150px;
+    }
+  }
+
+  &__sidebar-item-info {
+    font-size: 14px;
+    padding: 20px;
+
+    @include media('<desktop') {
+      min-width: 34%;
+      width: 100%;
+      flex-grow: 1;
+    }
+
+    a {
+      display: block;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: $black;
+      transition: color $animation-speed ease-in-out;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+
+    span {
+      display: block;
+    }
+  }
+}

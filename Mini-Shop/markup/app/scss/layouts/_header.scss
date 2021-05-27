@@ -1,0 +1,142 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 5px 0 #000;
+  z-index: 10;
+
+  &__inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+
+    @include media('<476px') {
+      height: 65px;
+    }
+  }
+
+  .logo {
+    a {
+      @include media('<476px') {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    ul {
+      @extend %listreset;
+
+      display: flex;
+
+      li {
+        padding: 20px;
+
+        &.active {
+          a {
+            color: $accent;
+          }
+        }
+      }
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $white;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: color $animation-speed ease-in-out;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+
+    .icon-cart {
+      position: relative;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $black;
+        position: absolute;
+        content: '';
+        background-color: $accent;
+        width: 14px;
+        height: 14px;
+        font-size: 11px;
+        border-radius: 50%;
+        right: 0;
+        top: 0;
+        transform: translate(100%, -50%);
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $accent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin-left: 20px;
+
+    @include media('<tablet') {
+      order: 2;
+    }
+
+    @include media('<476px') {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover {
+      &+ul {
+        display: block;
+      }
+    }
+
+    span {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 80%;
+      background-color: $accent;
+    }
+
+    &+ul {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 14px);
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 5px 0 #000;
+      flex-direction: column;
+      padding-bottom: 10px;
+      display: none;
+
+
+      @include media('<476px') {
+        top: 100%;
+      }
+
+      li {
+        padding: 10px 40px;
+      }
+    }
+  }
+}

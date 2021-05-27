@@ -1,0 +1,78 @@
+.introduce {
+  background-image: url('../img/home-top-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: $white;
+
+  @include media('<tablet') {
+    background-position: 63% 50%;
+  }
+
+  &__inner {
+    display: flex;
+    height: calc(100vh - 300px);
+  }
+
+  &__content {
+    align-self: center;
+    text-align: center;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @include media('<tablet') {
+      font-size: 40px;
+      margin-bottom: 10px;
+      max-width: 60%;
+    }
+
+    &+p {
+      font-size: 24px;
+
+      @include media('<tablet') {
+        font-size: 20px;
+        max-width: 60%;
+      }
+
+      span {
+        color: $accent;
+      }
+    }
+  }
+}
+
+.testimonials {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      max-width: 50%;
+      text-align: center;
+      line-height: 1.5;
+
+      @include media('<tablet') {
+        max-width: 80%;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: .15em;
+    }
+  }
+}

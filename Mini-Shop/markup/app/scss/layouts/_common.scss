@@ -1,0 +1,64 @@
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1480px;
+	padding: 0 20px;
+}
+
+section {
+	padding: 100px 0;
+
+	&:first-of-type {
+		padding: 150px 0;
+
+		@include media('<476px') {
+			padding: 100px 0;
+		}
+	}
+
+	h2 {
+		color: $accent;
+		text-transform: uppercase;
+		max-width: fit-content;
+		margin: 0 auto 40px;
+		padding: 10px 0 10px 40px;
+		border-left: 3px solid $accent;
+	}
+}
+
+.logo {
+	a {
+		text-decoration: none;
+		font-family: 'Newsreader',
+			serif;
+		color: $white;
+		font-size: 40px;
+
+		span {
+			color: $accent;
+		}
+	}
+}
+
+.hidden-tablet {
+	@include media('<tablet') {
+		display: none;
+	}
+}
+
+.hidden-tablet-upper {
+	@include media('>=tablet') {
+		display: none !important;
+	}
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meshion</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap" rel="stylesheet">
+  <link media="all" rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <a href="index.html">
+              <span>Me</span>shio<span>n</span>
+            </a>
+          </div>
+          <nav class="header__nav">
+            <button class="header__burger hidden-tablet-upper">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="hidden-tablet-upper">
+              <li><a>Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+              <li class="hidden-tablet"><a href="index.html">Home</a></li>
+              <li class="hidden-tablet"><a href="shop.html">Shop</a></li>
+              <li class="active hidden-tablet"><a>Contact</a></li>
+              <li><a href="cart.html"><i class="icon-cart"><span>2</span></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="contact">
+        <div class="container">
+          <h2>contact</h2>
+
+          <form class="contact__form" action="#">
+            <div class="contact__form-row">
+              <label class="contact__label contact__label--required" for="contact-name">Your name</label>
+              <input type="text" id="contact-name" required placeholder="Your name">
+            </div>
+            <div class="contact__form-row">
+              <label class="contact__label contact__label--required" for="contact-email">Your email</label>
+              <input type="text" id="contact-email" required placeholder="Your email">
+            </div>
+            <div class="contact__form-row">
+              <label class="contact__label contact__label--required" for="contact-question">Your
+                question</label>
+              <textarea id="contact-question" required placeholder="Your question"></textarea>
+            </div>
+            <div class="contact__form-row">
+              <button class="btn btn--accent">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact__frame-holder">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13409.449485940677!2d-115.17911839097822!3d36.11286901263658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c430cb5147bd%3A0x82f2c7c5d9d10d84!2sBellagio%20Hotel%20%26%20Casino!5e1!3m2!1sen!2sua!4v1622091442970!5m2!1sen!2sua"
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__list-holder">
+              <h3 class="h4">contact us</h3>
+              <ul>
+                <li>
+                  <i class="icon-location"></i>
+                  <div class="footer__list-content">
+                    <address>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, aliquam.
+                    </address>
+                  </div>
+                </li>
+                <li>
+                  <i class="icon-phone"></i>
+                  <div class="footer__list-content">
+                    <a href="tel:+12345678">+(123) 45 678</a>
+                    <a href="tel:+12345678">+(123) 45 678</a>
+                  </div>
+                </li>
+                <li>
+                  <i class="icon-envelope"></i>
+                  <div class="footer__list-content">
+                    <a
+                      href="mailto:&#101;&#120;&#097;&#109;&#112;&#108;&#101;&#064;&#108;&#111;&#114;&#101;&#109;&#046;&#099;&#111;&#109;">
+                      &#101;&#120;&#097;&#109;&#112;&#108;&#101;&#064;&#108;&#111;&#114;&#101;&#109;&#046;&#099;&#111;&#109;
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list-holder">
+              <h3 class="h4">my account</h3>
+              <ul>
+                <li><a href="#">Cabinet</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Wishlist</a></li>
+              </ul>
+            </div>
+            <div class="footer__list-holder">
+              <h3 class="h4">loremips</h3>
+              <ul>
+                <li><a href="#">Lorem Ipsum Dolor</a></li>
+                <li><a href="#">Ipsum Lorem</a></li>
+                <li><a href="#">Dolor Ipsum </a></li>
+              </ul>
+            </div>
+            <div class="footer__list-holder">
+              <h3 class="h4">newsletter</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetures do adipisicing elit, sed
+              </p>
+              <form class="footer__form-newsletter" action="#">
+                <input type="email" placeholder="Enter your email">
+                <input type="submit" value="subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&reg; 2021 All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

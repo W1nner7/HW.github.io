@@ -1,0 +1,19 @@
+.btn {
+  background-color: #222;
+  border: none;
+  color: $white;
+  font-size: 14px;
+  line-height: 1;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  transition: color $animation-speed ease-in-out,
+    background-color $animation-speed ease-in-out;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $accent;
+    color: #222;
+  }
+}

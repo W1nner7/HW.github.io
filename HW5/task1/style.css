@@ -1,20 +1,21 @@
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.first{
+.first {
   align-self: flex-start;
 }
 
-.second{
+.second {
   align-self: center;
 }
 
-.fourth{
+.fourth {
   align-self: center;
 }
-.fifth{
+
+.fifth {
   align-self: flex-end;
 }
